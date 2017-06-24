@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">IOE GDG Santa Cruz 2017</string>
+    <string name="registry">Registro</string>
+    <string name="sign_in">Ingresar con mi cuenta Google</string>
+    <string name="sign_out">Cerrar Sesión</string>
+    <string name="send">Enviar</string>
+</resources>

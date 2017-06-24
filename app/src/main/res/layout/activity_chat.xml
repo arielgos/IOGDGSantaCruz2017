@@ -1,0 +1,55 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@color/yellow3">
+
+    <ListView
+            android:id="@+id/list"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_above="@+id/footer"
+            android:stackFromBottom="true"
+            android:dividerHeight="0dp"
+            android:divider="@color/blue5"
+            android:background="@android:color/transparent"
+            android:transcriptMode="alwaysScroll">
+    </ListView>
+
+    <TableRow
+            android:id="@+id/footer"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentLeft="true"
+            android:background="@color/blue4"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:weightSum="1">
+
+        <EditText
+                android:id="@+id/message"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.8"
+                android:padding="10dp"
+                android:background="@color/colorWhite"
+                android:textColor="@color/colorPrimaryDark"
+                android:drawableTintMode="screen"
+                android:inputType="text"
+                android:maxLines="3"
+                android:imeActionLabel="@android:string/search_go"
+                android:drawableLeft="@android:drawable/ic_menu_send"/>
+
+        <Button
+                android:id="@+id/send"
+                android:layout_height="match_parent"
+                android:layout_width="0dp"
+                android:layout_weight="0.2"
+                android:layout_gravity="right|center_vertical"
+                android:padding="10dp"
+                android:textAppearance="@android:style/TextAppearance.DeviceDefault.Small"
+                android:background="@drawable/btn_yellow"
+                android:textColor="@color/colorWhite"
+                android:text="@string/send"/>
+
+    </TableRow>
+
+</RelativeLayout>
